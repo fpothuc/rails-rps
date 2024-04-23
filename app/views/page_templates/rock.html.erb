@@ -39,6 +39,14 @@
 
     <h1>We played rock!</h1>
     <h1>They played <%=@rand_move%>!</h1>
-    <p><%=@rand_move%></p>
+    <%if @rand_move == "paper"%>
+      <p>We lost</p>
+    <%elsif @rand_move == "rock"%>
+      <p>We tied</p>
+    <%elsif @rand_move == "scissors"%>
+      <p>We won</p>
+    <%else%>
+      <h1>Invalid input</h1>
+    <%end%>
   </body>
 </html>
