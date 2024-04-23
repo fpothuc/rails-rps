@@ -1,5 +1,5 @@
 class ScissorsController < ApplicationController
-  def home_method
+  def scissors_method
     @rand_move = ["rock", "paper", "scissors"].sample
 
     render({ :template => "page_templates/scissors"})
